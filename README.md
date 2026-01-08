@@ -1,3 +1,1 @@
-"# codekata" 
-## asdfasdfasfd
-### hihihihi
+# This is Kim Jae Chun's DA_Portfolio
