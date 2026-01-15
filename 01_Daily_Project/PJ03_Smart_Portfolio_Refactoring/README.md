@@ -21,11 +21,11 @@
 # [Good] 반복될 때마다 새로운 객체 생성
 portfolio = {ticker: {'qty': 0, 'avg_price': 0.0} for ticker in tickers}
 ```
-3.2. 평단가 계산 로직 (Moving Average)
+### 3.2. 평단가 계산 로직 (Moving Average)
 매수 시마다 달라지는 평단가를 계산하기 위해 이동평균법(Weighted Average) 공식을 적용. 
 $$ \text{New Avg} = \frac{(\text{Old Qty} \times \text{Old Avg}) + (\text{Buy Qty} \times \text{Buy Price})}{\text{Old Qty} + \text{Buy Qty}} $$
 
-3.3. 데이터 흐름 제어 (Return)
+### 3.3. 데이터 흐름 제어 (Return)
 함수 내부에서 외부 변수를 직접 수정하지 않고, **갱신된 데이터를 return**하여 호출한 쪽에서 받아가도록 구조 변경.
 
 ```Python
@@ -33,18 +33,18 @@ $$ \text{New Avg} = \frac{(\text{Old Qty} \times \text{Old Avg}) + (\text{Buy Qt
 # 매수 후 갱신된 지갑과 잔고를 반환
 return portfolio, balance
 ```
-4. 트러블 슈팅 (Troubleshooting)
-4.1. Return의 위치 (Indentation Error)
+## 4. 트러블 슈팅 (Troubleshooting)
+### 4.1. Return의 위치 (Indentation Error)
 문제: return 문을 else 블록 안에 넣었더니, 잔고 부족 등 예외 상황(if) 발생 시 함수가 None을 반환하며 프로그램이 종료됨.
 
 해결: 성공/실패 여부와 관계없이 항상 현재 상태를 반환하도록 return의 들여쓰기 레벨을 함수 최상위로 조정함.
 
-4.2. 중첩 딕셔너리 접근 (Nested Dict)
+### 4.2. 중첩 딕셔너리 접근 (Nested Dict)
 문제: portfolio[ticker]까지는 접근했으나, 그 안의 수량을 꺼낼 때 문법 혼동.
 
 해결: 대괄호를 두 번 사용하여(portfolio[ticker]['qty']) 정확한 주소값에 접근.
 
-5. 결과 (Output)
+## 5. 결과 (Output)
 모듈화된 함수 덕분에 삼성전자, 하이닉스 등 여러 종목을 섞어서 거래해도 데이터 간섭 없이 정확한 수익률 계산 가능.
 
 initialize -> buy -> sell로 이어지는 데이터 파이프라인 구축 완료.
