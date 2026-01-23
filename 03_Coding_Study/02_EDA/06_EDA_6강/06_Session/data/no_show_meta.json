@@ -1,0 +1,162 @@
+{
+  "feature_columns": [
+    "age",
+    "wait_days",
+    "sms_received",
+    "scholarship",
+    "hypertension",
+    "diabetes",
+    "alcoholism",
+    "handcap",
+    "gender",
+    "appt_dow",
+    "neighbourhood"
+  ],
+  "schema": {
+    "age": {
+      "type": "num"
+    },
+    "wait_days": {
+      "type": "num"
+    },
+    "sms_received": {
+      "type": "num"
+    },
+    "scholarship": {
+      "type": "num"
+    },
+    "hypertension": {
+      "type": "num"
+    },
+    "diabetes": {
+      "type": "num"
+    },
+    "alcoholism": {
+      "type": "num"
+    },
+    "handcap": {
+      "type": "num"
+    },
+    "gender": {
+      "type": "cat",
+      "options": [
+        "F",
+        "M"
+      ]
+    },
+    "appt_dow": {
+      "type": "cat",
+      "options": [
+        "Friday",
+        "Monday",
+        "Saturday",
+        "Thursday",
+        "Tuesday",
+        "Wednesday"
+      ]
+    },
+    "neighbourhood": {
+      "type": "cat",
+      "options": [
+        "AEROPORTO",
+        "ANDORINHAS",
+        "ANTÔNIO HONÓRIO",
+        "ARIOVALDO FAVALESSA",
+        "BARRO VERMELHO",
+        "BELA VISTA",
+        "BENTO FERREIRA",
+        "BOA VISTA",
+        "BONFIM",
+        "CARATOÍRA",
+        "CENTRO",
+        "COMDUSA",
+        "CONQUISTA",
+        "CONSOLAÇÃO",
+        "CRUZAMENTO",
+        "DA PENHA",
+        "DE LOURDES",
+        "DO CABRAL",
+        "DO MOSCOSO",
+        "DO QUADRO",
+        "ENSEADA DO SUÁ",
+        "ESTRELINHA",
+        "FONTE GRANDE",
+        "FORTE SÃO JOÃO",
+        "FRADINHOS",
+        "GOIABEIRAS",
+        "GRANDE VITÓRIA",
+        "GURIGICA",
+        "HORTO",
+        "ILHA DAS CAIEIRAS",
+        "ILHA DE SANTA MARIA",
+        "ILHA DO BOI",
+        "ILHA DO FRADE",
+        "ILHA DO PRÍNCIPE",
+        "ILHAS OCEÂNICAS DE TRINDADE",
+        "INHANGUETÁ",
+        "ITARARÉ",
+        "JABOUR",
+        "JARDIM CAMBURI",
+        "JARDIM DA PENHA",
+        "JESUS DE NAZARETH",
+        "JOANA D´ARC",
+        "JUCUTUQUARA",
+        "MARIA ORTIZ",
+        "MARUÍPE",
+        "MATA DA PRAIA",
+        "MONTE BELO",
+        "MORADA DE CAMBURI",
+        "MÁRIO CYPRESTE",
+        "NAZARETH",
+        "NOVA PALESTINA",
+        "PARQUE INDUSTRIAL",
+        "PARQUE MOSCOSO",
+        "PIEDADE",
+        "PONTAL DE CAMBURI",
+        "PRAIA DO CANTO",
+        "PRAIA DO SUÁ",
+        "REDENÇÃO",
+        "REPÚBLICA",
+        "RESISTÊNCIA",
+        "ROMÃO",
+        "SANTA CECÍLIA",
+        "SANTA CLARA",
+        "SANTA HELENA",
+        "SANTA LUÍZA",
+        "SANTA LÚCIA",
+        "SANTA MARTHA",
+        "SANTA TEREZA",
+        "SANTO ANDRÉ",
+        "SANTO ANTÔNIO",
+        "SANTOS DUMONT",
+        "SANTOS REIS",
+        "SEGURANÇA DO LAR",
+        "SOLON BORGES",
+        "SÃO BENEDITO",
+        "SÃO CRISTÓVÃO",
+        "SÃO JOSÉ",
+        "SÃO PEDRO",
+        "TABUAZEIRO",
+        "UNIVERSITÁRIO",
+        "VILA RUBIM"
+      ]
+    }
+  },
+  "defaults": {
+    "age": 37.0,
+    "wait_days": 4.0,
+    "sms_received": 0.0,
+    "scholarship": 0.0,
+    "hypertension": 0.0,
+    "diabetes": 0.0,
+    "alcoholism": 0.0,
+    "handcap": 0.0,
+    "gender": "F",
+    "appt_dow": "Wednesday",
+    "neighbourhood": "JARDIM CAMBURI"
+  },
+  "label_map": {
+    "0": "Show",
+    "1": "No-show"
+  }
+}
