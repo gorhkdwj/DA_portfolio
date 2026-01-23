@@ -1,0 +1,13 @@
+customer_id,customer_name,age,city,signup_date,segment
+cust_0001,김민준,28.0,SEOUL,2026-01-02,vip
+cust_0002,이서연,34.0,BUSAN,2026-01-05,returning
+cust_0003,박지훈,22.0,SEOUL,2026-01-07,new
+cust_0004,최유진,29.0,DAEGU,2026-01-08,new
+cust_0005,정하늘,,BUSAN,2026-01-09,new
+cust_0006,오세훈,41.0,INCHEON,2026-01-10,vip
+cust_0007,장서윤,26.0,DAEGU,2026-01-11,returning
+cust_0008,홍길동,31.0,SEOUL,2026-01-12,vip
+cust_0009,문지우,19.0,,2026-01-13,new
+cust_0010,김서현,37.0,GWANGJU,2026-01-15,returning
+cust_0011,양준호,24.0,BUSAN,2026-01-16,new
+cust_0012,한지민,33.0,SEOUL,2026-01-18,returning
